@@ -17,13 +17,15 @@ public class PlayersManager : NetworkSingleton<PlayersManager>
     {
         NetworkManager.Singleton.OnClientConnectedCallback += (id) =>
         {
+            Logger.Instance.LogInfo($"{id} just connected...");
             if(IsServer)
                 playersInGame.Value++;
         };
 
         NetworkManager.Singleton.OnClientDisconnectCallback += (id) =>
         {
-            if(IsServer)
+            Logger.Instance.LogInfo($"{id} just disconnected...");
+            if (IsServer)
                 playersInGame.Value--;
         };
     }

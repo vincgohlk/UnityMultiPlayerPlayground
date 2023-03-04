@@ -27,7 +27,7 @@ public class UIManager : Singleton<UIManager>
 
     void Update()
     {
-        //playersInGameText.text = $"Players in game: {PlayersManager.Instance.PlayersInGame}";
+        playersInGameText.text = $"Players in game: {PlayersManager.Instance.PlayersInGame}";
     }
 
     void Start()
