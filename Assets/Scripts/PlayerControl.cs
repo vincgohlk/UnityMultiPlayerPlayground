@@ -54,7 +54,7 @@ public class PlayerControl : NetworkBehaviour
             UpdateServer();
         }
 
-        if (IsClient)
+        if (IsClient && IsOwner)
         {
             UpdateClient();
         }
