@@ -692,6 +692,7 @@ GameObject:
   - component: {fileID: 2255991852033553866}
   - component: {fileID: 8782944162090155111}
   - component: {fileID: 8431037942286278348}
+  - component: {fileID: 8129371214575520547}
   m_Layer: 8
   m_Name: PlayerArmatureNetwork
   m_TagString: Player
@@ -792,6 +793,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956d0598180a92e4a8ce2844e791283f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8129371214575520547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255991852033553856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f14d337ff94c904ca34d0aaa5448629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 0.1
+  runSpeedOffset: 2
+  rotationSpeed: 3.5
+  defaultInitialPositionOnPlane: {x: -4, y: 4}
+  forwardBackPosition:
+    m_InternalValue: 0
+  leftRightPosition:
+    m_InternalValue: 0
 --- !u!1 &2439462815760529262
 GameObject:
   m_ObjectHideFlags: 0
