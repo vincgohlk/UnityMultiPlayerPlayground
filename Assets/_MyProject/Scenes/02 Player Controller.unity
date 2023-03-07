@@ -856,7 +856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 0.6
+  m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0.71
@@ -1359,6 +1359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1096450220}
+  - component: {fileID: 1096450221}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1381,6 +1382,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1096450221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096450219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1717bbb89a4f5fc43b378cfe7edcc79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startServerButton: {fileID: 1788238528}
+  startHostButton: {fileID: 407616388}
+  startClientButton: {fileID: 2024932934}
+  playersInGameText: {fileID: 189727566}
 --- !u!1 &1227275792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442138341}
   - component: {fileID: 1442138343}
+  - component: {fileID: 1442138344}
   m_Layer: 0
   m_Name: PlayersManager
   m_TagString: Untagged
@@ -1560,10 +1578,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1514593801
+  GlobalObjectIdHash: 425836691
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &1442138344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442138340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd2f2f3672ce0946bf8313e8d9c53a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1452697940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,9 +1739,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1452697940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afe795d8491c12d4c8f693e3c27239e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac9b121a0519a748b65a237c4c8db77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugAreaText: {fileID: 1452697942}
+  enableDebug: 1
+  maxLines: 15
 --- !u!1 &1629209784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,7 +2137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3961742352
+  GlobalObjectIdHash: 2573465404
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
