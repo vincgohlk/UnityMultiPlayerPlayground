@@ -730,7 +730,7 @@ Animator:
   m_GameObject: {fileID: 2255991852033553856}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
-  m_Controller: {fileID: 9100000, guid: eec69ad5ebd7849418020db04e5ed28f, type: 2}
+  m_Controller: {fileID: 9100000, guid: efa30c7218e3e9142ac3aab59d9e82b2, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -740,6 +740,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!143 &2255991852033553866
 CharacterController:
   m_ObjectHideFlags: 0
@@ -832,9 +833,9 @@ MonoBehaviour:
   SyncRotAngleX: 1
   SyncRotAngleY: 1
   SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
   PositionThreshold: 0.001
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01

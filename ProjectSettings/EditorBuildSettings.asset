@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_MyProject/Scenes/02 Player Controller.unity
     guid: 9c349895b8ff3cc43988e2eac7a4c306
+  - enabled: 1
+    path: Assets/_MyProject/Scenes/03 Player Controller Start - 08-06.unity
+    guid: b1dc5273c69df3543aa3e0dcdc6af69e
   m_configObjects: {}
